@@ -119,7 +119,7 @@
 <div class="comments-count">
 	
 	  	<span></span>
-		<a href="/blog/2015/05/07/my-post/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/05/07/my-post/" data-count-type="comments">&nbsp;</a>
+		<a href="/blog/2015/05/07/my-post/#disqus_thread" class="comments-count-link">Comments</a>
 	
 </div>
 
@@ -180,7 +180,7 @@
 <div class="comments-count">
 	
 	  	<span></span>
-		<a href="/blog/2015/05/07/hello-world/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/05/07/hello-world/" data-count-type="comments">&nbsp;</a>
+		<a href="/blog/2015/05/07/hello-world/#disqus_thread" class="comments-count-link">Comments</a>
 	
 </div>
 
@@ -335,18 +335,26 @@ $(document).ready(function(){
 
 
 
-<script type="text/javascript">
-  var duoshuoQuery = {short_name:"yinli"};
-  (function() {
-    var ds = document.createElement('script');
-    ds.type = 'text/javascript';ds.async = true;
-    ds.src = '//static.duoshuo.com/embed.js';
-    ds.charset = 'UTF-8';
-    (document.getElementsByTagName('head')[0] 
-    || document.getElementsByTagName('body')[0]).appendChild(ds);
-  })();
-</script> 
 
+<script type="text/javascript">
+
+var disqus_shortname = 'yinli';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
 
 
 
