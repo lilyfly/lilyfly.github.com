@@ -125,9 +125,7 @@ window.onload=function(){
         var buttons=document.getElementById("center").getElementsByTagName("input");
         var box=document.getElementsByClassName("box")[0];
         for(var i=0,len=buttons.length; i&lt;len;i++){
-
             buttons[i].index = i;
-
             buttons[i].onclick=function(){
                 this.index== len - 1 && (box.style.cssText = "");
                 change(box,changeType[this.index],value[this.index]);
