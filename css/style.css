@@ -377,14 +377,9 @@ body >header {
   width: 100%;
   -webkit-box-shadow: 2px 4px 5px rgba(3,3,3,0.2);
   box-shadow: 2px 4px 5px rgba(3,3,3,0.2);
-  background: url("../") center #2ca6cb;
+  background: url("../") center #fff;
   color: #fff;
   padding: 1em 0 0.8em;
-}
-@media only screen and (min-width: 1024px) {
-  body >header {
-    padding: 1.8em 0 1.5em;
-  }
 }
 body >header >div {
   width: 95%;
@@ -399,7 +394,7 @@ body >header >div {
 }
 body >header a {
   display: block;
-  color: #fff;
+  color: #000;
 }
 #imglogo {
   float: left;
@@ -508,7 +503,6 @@ header nav {
   header nav {
     float: right;
     width: auto;
-    margin-top: 1em;
     max-height: none;
   }
 }
@@ -531,8 +525,7 @@ header nav ul li a {
   }
 }
 header nav ul li a:hover {
-  background: #1b7f9e;
-  color: #e9cd4c;
+  color: #2ca6cb;
 }
 .shownav {
   max-height: 40em;
@@ -1932,7 +1925,7 @@ section.comment {
 }
 footer {
   margin-top: 1em;
-  background: #1f1f1f;
+  background: #ddd;
   padding: 0 2% 0.5em;
 }
 #footer {
