@@ -32,6 +32,7 @@
     <link rel="apple-touch-icon-precomposed" href="/blog/img/jacman.jpg">
     
     <link rel="stylesheet" href="/blog/css/style.css" type="text/css">
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css" defer="defer"></script>
 </head>
 
   <body>
@@ -74,6 +75,83 @@
     </header>
     <div id="container">
       <div id="main">
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/blog/2015/05/12/zoom/" title="zoom" itemprop="url">zoom</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/blog/about" title="yinli" target="_blank" itemprop="author">yinli</a>
+		
+  <p class="article-time">
+    <time datetime="2015-05-12T05:47:06.000Z" itemprop="datePublished"> 发表于 2015-05-12</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <pre class="prettyprint" id="quine" style="border:4px solid #88c">
+function change(ele,changeType,value){
+        ele.style[changeType]=value;
+}
+    window.onload=function(){
+        var changeType=["width","height","background","display","display"];
+        var value=["400px","400px","red","none","block"];
+        var buttons=document.getElementById("center").getElementsByTagName("input");
+        var box=document.getElementsByClassName("box")[0];
+        for(var i=0,len=buttons.length; i&lt;len;i++){
+
+            buttons[i].index = i;
+
+            buttons[i].onclick=function(){
+                this.index== buttons.length - 1 && (box.style.cssText = "");
+
+                change(box,changeType[this.index],value[this.index]);
+            }
+        }
+    }
+</pre>
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/blog/tags/zoom/">zoom</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+	  	<span></span>
+		<a href="/blog/2015/05/12/zoom/#disqus_thread" class="comments-count-link">Comments</a>
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
 
    
     
@@ -239,6 +317,10 @@
 		
 			
 				<li><a href="/blog/tags/cmd/" title="cmd">cmd<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/blog/tags/zoom/" title="zoom">zoom<sup>1</sup></a></li>
 			
 		
 		</ul>
