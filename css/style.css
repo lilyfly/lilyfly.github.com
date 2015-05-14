@@ -379,17 +379,16 @@ body >header {
   box-shadow: 2px 4px 5px rgba(3,3,3,0.2);
   background: url("../") center #fff;
   color: #fff;
-  padding: 1em 0 0.8em;
 }
 body >header >div {
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
 }
 @media only screen and (min-width: 1024px) {
   body >header >div {
-    width: 93%;
+    width: 100%;
   }
 }
 body >header a {
