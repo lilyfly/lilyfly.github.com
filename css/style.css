@@ -400,28 +400,8 @@ body >header a {
   width: 4em;
   height: 4em;
 }
-@media only screen and (min-width: 768px) {
-  #imglogo {
-    width: 5em;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  #imglogo {
-    width: 5.5em;
-  }
-}
 #imglogo img {
   width: 4em;
-}
-@media only screen and (min-width: 768px) {
-  #imglogo img {
-    width: 5em;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  #imglogo img {
-    width: 5.5em;
-  }
 }
 #textlogo {
   float: left;
@@ -449,6 +429,7 @@ body >header a {
 #textlogo h2.blog-motto {
   font-size: 0.7em;
   font-weight: normal;
+  color: #000;
 }
 @media only screen and (min-width: 768px) {
   #textlogo h2.blog-motto {
@@ -535,9 +516,9 @@ header nav ul li a:hover {
 .search input {
   -webkit-appearance: textfield;
   font-size: 0.87em;
-  line-height: 1.7;
-  border: 1px solid #fff;
-  color: #fff;
+  line-height: 1.5;
+  border: 1px solid #000;
+  color: #000;
   background: transparent;
   width: 80%;
   padding-left: 0.5em;

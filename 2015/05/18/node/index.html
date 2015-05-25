@@ -1,26 +1,31 @@
 
-  
-    <!DOCTYPE HTML>
+ <!DOCTYPE HTML>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   
-    <title>yinli home | yinli</title>
+    <title>node.js入门 | yinli</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="yinli">
     
 
     
-    <meta name="description" content="just go">
-<meta property="og:type" content="website">
-<meta property="og:title" content="yinli home">
-<meta property="og:url" content="http://lilyfly.github.io/about/index.html">
+    <meta name="description" content="1.Node 是一个服务器端 JavaScript 解释器，可是真的以为JavaScript不错的同学学习Node就能轻松拿下，那么你就错了，总结：水深不深我还不知道，不过确实不浅。
+　　2.Node 的目标是帮助程序员构建高度可伸缩的应用程序，编写能够处理数万条同时连接到一个物理机的连接代码。处理高并发和异步I/O是Node受到开发人员的关注的原因之一。
+　　3.Node 本身运行Google">
+<meta property="og:type" content="article">
+<meta property="og:title" content="node.js入门">
+<meta property="og:url" content="http://lilyfly.github.io/2015/05/18/node/index.html">
 <meta property="og:site_name" content="yinli">
-<meta property="og:description" content="just go">
+<meta property="og:description" content="1.Node 是一个服务器端 JavaScript 解释器，可是真的以为JavaScript不错的同学学习Node就能轻松拿下，那么你就错了，总结：水深不深我还不知道，不过确实不浅。
+　　2.Node 的目标是帮助程序员构建高度可伸缩的应用程序，编写能够处理数万条同时连接到一个物理机的连接代码。处理高并发和异步I/O是Node受到开发人员的关注的原因之一。
+　　3.Node 本身运行Google">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="yinli home">
-<meta name="twitter:description" content="just go">
+<meta name="twitter:title" content="node.js入门">
+<meta name="twitter:description" content="1.Node 是一个服务器端 JavaScript 解释器，可是真的以为JavaScript不错的同学学习Node就能轻松拿下，那么你就错了，总结：水深不深我还不知道，不过确实不浅。
+　　2.Node 的目标是帮助程序员构建高度可伸缩的应用程序，编写能够处理数万条同时连接到一个物理机的连接代码。处理高并发和异步I/O是Node受到开发人员的关注的原因之一。
+　　3.Node 本身运行Google">
 
     
     <link rel="alternative" href="/atom.xml" title="yinli" type="application/atom+xml">
@@ -64,9 +69,9 @@
     <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css" defer="defer"></script>
 </head>
 
-      <body>
-        <header>
-          
+  <body>
+    <header>
+      
 <div>
 	
 			<div id="imglogo"   class="rotate">
@@ -101,32 +106,58 @@
 				</ul>
 			</nav>			
 </div>
-        </header>
-        <div id="container">
-          <div id="main" class="page" itemscope itemprop="blogPost">
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
   
 	<article itemprop="articleBody"> 
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/about/index.html" title="yinli home" itemprop="url">yinli home</a>
+      <a href="/2015/05/18/node/" title="node.js入门" itemprop="url">node.js入门</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="yinli" target="_blank" itemprop="author">yinli</a>
 		
   <p class="article-time">
-    <time datetime="2015-05-14T09:31:35.000Z" itemprop="datePublished"> 发表于 2015-05-14</time>
+    <time datetime="2015-05-18T07:31:17.000Z" itemprop="datePublished"> 发表于 2015-05-18</time>
     
   </p>
 </header>
 	<div class="article-content">
 		
-		  
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#hello-js"><span class="toc-number">1.</span> <span class="toc-text">hello.js</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#cmd下运行node_hello-js"><span class="toc-number">2.</span> <span class="toc-text">cmd下运行node hello.js</span></a></li></ol>
+		
+		</div>
+		
+		<p>  1.Node 是一个服务器端 JavaScript 解释器，可是真的以为JavaScript不错的同学学习Node就能轻松拿下，那么你就错了，总结：水深不深我还不知道，不过确实不浅。</p>
+<p>　　2.Node 的目标是帮助程序员构建高度可伸缩的应用程序，编写能够处理数万条同时连接到一个物理机的连接代码。处理高并发和异步I/O是Node受到开发人员的关注的原因之一。</p>
+<p>　　3.Node 本身运行Google V8 JavaScript引擎，所以速度和性能非常好，看chrome就知道，而且Node对其封装的同时还改进了其处理二进制数据的能力。因此，Node不仅仅简单的使用了V8，还对其进行了优化，使其在各种环境下更加给力。（什么是V8 JavaScript 引擎？请“百度知道”）</p>
+<p>　　4.第三方的扩展和模块在Node的使用中起到重要的作用。下面也会介绍下载npm，npm就是模块的管理工具，用它安装各种 Node 的软件包(如express，redis等)并发布自己为Node写的软件包 。</p>
+<h3 id="hello-js">hello.js</h3><pre class="prettyprint linenums" id="quine" style="border:4px solid #88c">
+ var http = require('http');
+　　http.createServer(function (req, res) {
+　　  res.writeHead(200, {'Content-Type': 'text/plain'});
+ 　　 res.end('Hello World\n');
+　　}).listen(1337, "127.0.0.1");
+　　console.log('Server running at http://127.0.0.1:1337/');
+</pre>
+
+<h3 id="cmd下运行node_hello-js">cmd下运行node hello.js</h3><p>参考文章<br><a href="http://www.cnblogs.com/Darren_code/archive/2011/10/31/2207063.html#!comments" target="_blank" rel="external">node.js 初体验</a></p>
+  
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
 
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/node-js/">node.js</a>
+  </div>
 
 </div>
 
@@ -134,7 +165,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://lilyfly.github.io/about/index.html" data-title="yinli home | yinli" data-tsina="null" class="share clearfix">
+	  <div data-url="http://lilyfly.github.io/2015/05/18/node/" data-title="node.js入门 | yinli" data-tsina="null" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -145,6 +176,27 @@
    	       
 	</article>
 	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2015/05/20/Bootstrap/" title="bootstrap响应式布局">
+  <strong>上一篇：</strong><br/>
+  <span>
+  bootstrap响应式布局</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2015/05/12/js/"  title="js">
+ <strong>下一篇：</strong><br/> 
+ <span>js
+</span>
+</a>
+</div>
+
+</nav>
+
 	
 
 
@@ -158,13 +210,69 @@
 
 
 </div>  
-        </div>
-        <footer><div id="footer" >
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#hello-js"><span class="toc-number">1.</span> <span class="toc-text">hello.js</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#cmd下运行node_hello-js"><span class="toc-number">2.</span> <span class="toc-text">cmd下运行node hello.js</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			
+				<li><a href="/tags/js/" title="js">js<sup>2</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/node-js/" title="node.js">node.js<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/emmet/" title="emmet">emmet<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/cmd/" title="cmd">cmd<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/bootstrap/" title="bootstrap">bootstrap<sup>1</sup></a></li>
+			
+		
+		</ul>
+</div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+        
+    </ul>
+</div>
+
+  
+
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
 	
 </div>
 
 </footer>
-        <script src="/js/jquery-2.0.3.min.js"></script>
+    <script src="/js/jquery-2.0.3.min.js"></script>
 <script src="/js/jquery.imagesloaded.min.js"></script>
 <script src="/js/gallery.js"></script>
 
@@ -207,8 +315,36 @@ $(document).ready(function(){
       m.removeClass('moveMain');
       a.css('display', 'block').removeClass('fadeOut');
       o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
         
     }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
   });
 });
 </script>
@@ -326,6 +462,5 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
 
 <!-- Tiny_search End -->
 
-      </body>
-     </html>
-     
+  </body>
+</html>
